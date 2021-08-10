@@ -17,7 +17,7 @@ const routes = [
         component: initPlay,
     },
     {
-        path: /\/resultado-winner/,
+        path: /\/results/,
         component: initResultadoWinner,
     },
     {

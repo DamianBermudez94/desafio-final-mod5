@@ -46,15 +46,18 @@ export function initPlay(params){
         }
   
         .container {
-            padding: 50px;
+            
+            min-width: 370px;
+            min-height: 200px;
+            justify-content: space-around;
             display: flex;
             flex-direction: row;
             align-items: flex end;
          }
-       
+      
     
     `
-    console.log(state.getScore);
+    console.log("dsafasdfasd",state.getScore);
     const pointEl = div.querySelectorAll("#pointer");
     let contador:any = div.querySelector(".contador");
     let boolean = false;
@@ -64,26 +67,27 @@ export function initPlay(params){
             boolean = true;
             const evento = new CustomEvent("change", {detail:{
             myPlay: e.detail.myPlay
+            
+            
         }})
+    
         
-        state.setMove(e.detail.myPlay)
+        state.setMove(e.detail.myPlay);
+       
         
-        
-        params.goTo("/resultado-winner");
+        params.goTo("/results");
         })
     })
     contador.addEventListener("change", (e:any)=>{
-        
       
         if(boolean == false){
-            params.goTo("/instructiones")
+            params.goTo("/welcome")
         }
         
     })
-    
-    
     div.appendChild(style);
-    
-    
     return div;
+
+
+    
 }

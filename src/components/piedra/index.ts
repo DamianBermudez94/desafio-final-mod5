@@ -12,7 +12,7 @@ export function piedraComp(){
             const div = document.createElement("div");
             const style = document.createElement("style");
             div.innerHTML = `
-                <img variant= "big" class="piedra" src="${piedra}"> 
+                <img variant="big" class="piedra" src="${piedra}"> 
             `
             style.innerHTML=`
                 .big{
@@ -26,7 +26,7 @@ export function piedraComp(){
                   
                     
                 }
-               
+              
             `
 
             const elegido = div.querySelector (".piedra");

@@ -1,4 +1,4 @@
-type Jugada = "piedra"|"papel"|"tijera";
+type Jugada = "piedra"|"papel"|"tijeras";
 
 
  const state = {
@@ -41,7 +41,7 @@ type Jugada = "piedra"|"papel"|"tijera";
         let random = Math.floor(Math.random() *3);
       
         if(random == 0){
-            currentState.currentGame.computerPlay = "tijera";
+            currentState.currentGame.computerPlay = "tijeras";
         }
         if (random == 1){
             currentState.currentGame.computerPlay = "piedra";
@@ -78,29 +78,29 @@ type Jugada = "piedra"|"papel"|"tijera";
         if(myPlay == "piedra"){
             if(computerPlay == "papel")
             return "perdiste";
-        if(computerPlay == "tijera")
-            return "ganaste";
-        if(computerPlay == "piedra")
-            return "empataste";
+            if(computerPlay == "tijeras")
+                return "ganaste";
+            if(computerPlay == "piedra")
+                return "empataste";
         }
 
-        if(myPlay == "tijera"){
+        if(myPlay == "tijeras"){
             if(computerPlay == "papel")
             return "ganaste";
-        if(computerPlay == "piedra")
-            return "perdiste";
-        if(computerPlay == "tijera")
-            return "empataste";
+            if(computerPlay == "piedra")
+                return "perdiste";
+            if(computerPlay == "tijeras")
+                return "empataste";
         }
 
 
         if(myPlay == "papel"){
-            if(computerPlay == "tijera")
+            if(computerPlay == "tijeras")
             return "perdiste";
-        if(computerPlay == "piedra")
-            return "ganaste";
-        if(computerPlay == "papel")
-            return "empataste";
+            if(computerPlay == "piedra")
+                return "ganaste";
+            if(computerPlay == "papel")
+                return "empataste";
         }
     }
         

@@ -10,7 +10,7 @@ export function winComp(){
             const div = document.createElement("div");
             const style = document.createElement("style");
             div.innerHTML = `
-                <img class="img" src="./ganardor.png"> 
+                <img class="img" src="./ganaste.png"> 
             `
 
             style.innerHTML = `

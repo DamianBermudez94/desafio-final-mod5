@@ -14,7 +14,7 @@ export function initWelcome(params){
          <div class = "contenedor-elementos">
             <custom-tijera variant="small" class="elementos"></custom-tijera>
             <custom-piedra variant="small" class="elementos" ></custom-piedra>
-            <custom-papel variant = "small" class="elementos" ></custom-papel>
+            <custom-papel variant="small" class="elementos" ></custom-papel>
          </div>
     </section>
     `

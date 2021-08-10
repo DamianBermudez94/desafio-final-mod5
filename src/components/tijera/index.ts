@@ -12,7 +12,7 @@ export function tijeraComp(){
             const div = document.createElement("div");
             const style = document.createElement("style");
             div.innerHTML = `
-                <img variant="big" class="tijera" src=${tijera}> 
+                <img variant="big" class="tijeras" src=${tijera}> 
             `
             style.innerHTML = `
             .big{
@@ -26,13 +26,14 @@ export function tijeraComp(){
             
             }
            
+           
             `
             
-            const elegido = div.querySelector (".tijera");
+            const elegido = div.querySelector (".tijeras");
             elegido.addEventListener("click", (r)=>{
                 const evento = new CustomEvent("change",{detail:
                 {
-                    myPlay:"tijera",
+                    myPlay:"tijeras",
 
                 }
             })

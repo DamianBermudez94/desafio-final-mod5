@@ -1,3 +1,5 @@
+import { initResultadoWinner } from "../../pages/resultado-winner";
+
 export function contadorComp(){
     class ContadorComp extends HTMLElement {
         
@@ -26,28 +28,21 @@ export function contadorComp(){
 
                 }
             `
-            const intervalo= setInterval(()=>{
-                
+        const intervalo = setInterval(()=>{        
             div.innerHTML = `
                 <div class= "counter">${counter}</div>
                 
             `
-            
             if(counter <=0){
                 clearInterval(intervalo);
                 const contador = new CustomEvent("change", {detail:{
                     numero:counter,
-                    
-                    
                 }});
                 this.dispatchEvent(contador);
             }
-                
-            
-                counter --;
-            
+             counter --;  
         },1000);
-            
+       
             
             shadow.appendChild(div);
             shadow.appendChild(style);

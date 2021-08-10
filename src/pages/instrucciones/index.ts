@@ -42,9 +42,9 @@ export function initInstruscciones(params){
         .contenedor-elementos {
             display: flex;
             flex-direction: row;
-            justify-content: center;
+           
             margin: 0;
-            padding: 0;
+            
           
         }
 
@@ -64,7 +64,7 @@ export function initInstruscciones(params){
         
        
         .section{
-            height: 100vh;
+            height: 100%;
             background-image:url(${imgFondo});
             display: flex;
             flex-direction: column;
@@ -75,6 +75,7 @@ export function initInstruscciones(params){
         }
         @media (min-width:960px){
             .section{
+                height: 100vh;
               justify-content: space-around;
             }
         }

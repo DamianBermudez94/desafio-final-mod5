@@ -29,6 +29,7 @@ export function papelComp(){
               
             }
             
+            
             `
             const elegido = div.querySelector(".papel");
             elegido.addEventListener("click", (r)=>{
