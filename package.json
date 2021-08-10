@@ -5,7 +5,7 @@
   },
   "scripts": {
     "dev": "parcel serve ./src/index.html",
-    "build": "parcel build ./src/index.html --dist-dir build --public-url /dwf-m5-parcel-server",
+    "build": "parcel build ./src/index.html --dist-dir build --public-url /desafio-modulo-5",
     "deploy": "gh-pages -d build"
   }
 }
