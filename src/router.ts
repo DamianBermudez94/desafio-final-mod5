@@ -53,7 +53,7 @@ export function initRouter(container: Element) {
         }
     
     }
-    handleRoute(location.pathname.replace("/dwf-m5-parcel-server/", "/welcome"));
+    handleRoute(location.pathname.replace("/desafio-final-mod5", "/welcome"));
     if(location.pathname){
         goTo("/welcome");
         
